@@ -27,5 +27,11 @@ pipeline {
       }
     }
 
+    stage('s4') {
+      steps {
+        git(url: 'git@git.xrays.fun:10022/sujy/jenkinsTest1.git', branch: 'master')
+      }
+    }
+
   }
 }
