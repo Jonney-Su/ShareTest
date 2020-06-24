@@ -21,5 +21,11 @@ pipeline {
       }
     }
 
+    stage('s3') {
+      steps {
+        input(message: 'm1', id: 'id1', ok: 'ok1')
+      }
+    }
+
   }
 }
